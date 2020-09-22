@@ -1,3 +1,5 @@
+require 'pry'
+
 def update_status
    epic_tragedy = {
       :montague => {
@@ -22,6 +24,11 @@ def update_status
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
+  if epic_tragedy[:montague][:hero][:status] || epic_tragedy[:capulet][:heroine][:status] == "alive"
+    #binding.pry
+    epic_tragedy[:montague][:hero][:status] = "dead"
+    epic_tragedy[:capulet][:heroine][:status] = "dead"
+  end
 
 
 
@@ -56,10 +63,10 @@ def add_characters
    #
    # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
    # - Add two hashes to this array, both with a :name key.
-   #   - The first hash should have the :name key set to "Prince Escalus" 
-   #   - The second hash should have the :name key set to "Apothecary" 
+   #   - The first hash should have the :name key set to "Prince Escalus"
+   #   - The second hash should have the :name key set to "Apothecary"
    # Code your solution here:
-
+   epic_tragedy[:additional_characters] = [{:name => "Prince Escalus"}, {:name => "Apothecary"}]
 
 
 
