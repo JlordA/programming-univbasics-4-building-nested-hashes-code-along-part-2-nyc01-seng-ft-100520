@@ -26,7 +26,7 @@ def update_status
   # Code your solution here:
   if epic_tragedy.fetch(:status) == "alive"
     #binding.pry
-    epic_tragedy[:montague][:hero][:status] = "dead"
+    [:status] = "dead"
   end
 
 
