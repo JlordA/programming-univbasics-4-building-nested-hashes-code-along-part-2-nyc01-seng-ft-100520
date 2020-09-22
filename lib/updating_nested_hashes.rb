@@ -21,11 +21,11 @@ def update_status
          ]
       }
    }
-
+  binding.pry
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
   if epic_tragedy.fetch[:status] == "alive"
-    binding.pry
+
     [:status] = "dead"
   end
 
